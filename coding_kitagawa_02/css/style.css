@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+.work1-1 {
+    max-width: 960px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bluebox {
+    width: 31.25%;
+    height: 300px;
+    background: blue;
+}
+
+.work1-2 {
+    max-width: 960px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.redbox {
+    width: 31.25%;
+    height: 300px;
+    background: red;
+}
+
+.work1-3 {
+    max-width: 960px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    max-width: 960px;
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    padding: 3px 30px;
+    border-right: 1px solid black;
+}
+
+li:last-child {
+    border-right: none;
+}
