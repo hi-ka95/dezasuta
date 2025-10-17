@@ -34,14 +34,13 @@
     margin: 50px auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .menu {
-    max-width: 960px;
     font-size: small;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 ul li {
@@ -51,4 +50,20 @@ ul li {
 
 li:last-child {
     border-right: none;
+}
+
+@media screen and (max-width: 767px) {
+    .work1-3 {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    ul li {
+        padding: 15px 0;
+        border-bottom: 1px solid black;
+        border-right: none
+    }
 }
