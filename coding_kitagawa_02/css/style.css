@@ -55,6 +55,7 @@ li:last-child {
 @media screen and (max-width: 767px) {
     .work1-3 {
         display: block;
+        padding: 0 10px;
     }
 
     .menu {
