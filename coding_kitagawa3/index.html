@@ -4,47 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>第3回課題</title>
 </head>
 
 <body>
     <script>
         let result = 0;
-        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        for (i = 0; i < array.length; i++) {
-            result = result + array[i];
+        // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (i = 1; i <= 10; i++) {
+            // result = result + i;
+            result += i;
         }
         if (result >= 20) {
             console.log("20以上");
-        } else if (result <= 20) {
+        } else {
             console.log("20未満");
         }
     </script>
 
-    <h2>サービス</h2>
-    <section id="menu">
-        <div class="service1">
-            <img src="img/main_1.jpg">
-            <div class="text">
-                <h3>サービス1</h3>
-                <p>サービス1サービス1サービス1サービス1サービス1サービス1サービス1</p>
+
+    <section>
+        <h2>サービス</h2>
+        <div id="menu">
+            <div class="service">
+                <img src="img/main_1.jpg">
+                <div class="text">
+                    <h3>サービス1</h3>
+                    <p>サービス1サービス1サービス1サービス1サービス1サービス1サービス1</p>
+                </div>
             </div>
-        </div>
-        <div class="service2">
-            <img src="img/main_2.png">
-            <div class="text">
-                <h3>サービス2</h3>
-                <p>サービス2サービス2サービス2サービス2サービス2サービス2サービス2</p>
+            <div class="service">
+                <img src="img/main_2.png">
+                <div class="text">
+                    <h3>サービス2</h3>
+                    <p>サービス2サービス2サービス2サービス2サービス2サービス2サービス2</p>
+                </div>
             </div>
-        </div>
-        <div class="service3">
-            <img src="img/main_3.png">
-            <div class="text">
-                <h3>サービス3</h3>
-                <p>サービス3サービス3サービス3サービス3サービス3サービス3サービス3</p>
+            <div class="service">
+                <img src="img/main_3.png">
+                <div class="text">
+                    <h3>サービス3</h3>
+                    <p>サービス3サービス3サービス3サービス3サービス3サービス3サービス3</p>
+                </div>
             </div>
-        </div>
 
     </section>
 
