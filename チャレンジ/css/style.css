@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+header {
+    max-width: 960px;
+    margin: 50px auto;
+}
+
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 50px 0;
+}
+
+.menu {
+    display: flex;
+    padding: 0 20px;
+    /* justify-content: space-between; */
+}
+
+ul li {
+    padding: 0 15px;
+}
+
+h2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.topic {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.day>p {
+    white-space: nowrap;
+    padding-right: 150px;
+}
+
+h3 {
+    padding-bottom: 20px;
+}
