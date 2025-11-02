@@ -105,7 +105,11 @@ span p {
     width: 411px;
 }
 
-#MENU>img {
+#MENU_box>img {
     width: 151px;
     padding: 0 422px 39px 422px;
+}
+
+.category {
+    display: flex;
 }
