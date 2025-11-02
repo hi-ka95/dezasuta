@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+body {
+    background: gray;
+}
+
+header {
+    position: relative;
+}
+
+.header_slider img {
+    width: 100%;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7% 0 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    width: 227px;
+}
+
+.pc_nav ul {
+    display: flex;
+    gap: 54px;
+}
+
+.pc_nav ul li {
+    width: 105px;
+    color: white;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+    margin: 0 24%;
+}
+
+.catch {
+    font-size: 82px;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+}
+
+.en {
+    font-size: 30px;
+    line-height: 117px;
+    text-align: center;
+    font-feature-settings: "palt";
+}
+
+.ja {
+    font-size: 23px;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-feature-settings: "palt";
+    padding-top: 20px;
+}
+
+#ABOUT_US_box {
+    display: flex;
+    align-items: center;
+    padding: 94px 0;
+}
+
+.ABOUT_US img {
+    width: 500px;
+    height: 560px;
+    border-bottom-right-radius: 82px;
+}
+
+.text {
+    padding-left: 4%;
+}
+
+.text img {
+    width: 272px;
+}
+
+.text>p {
+    font-size: 44px;
+    line-height: 61px;
+    font-feature-settings: "palt";
+    padding: 48px 0 36px 0;
+}
+
+span p {
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: "palt";
+    width: 411px;
+}
+
+#MENU>img {
+    width: 151px;
+    padding: 0 422px 39px 422px;
+}
