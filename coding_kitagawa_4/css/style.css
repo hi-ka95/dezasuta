@@ -104,7 +104,7 @@ main {
     padding: 48px 0 36px 0;
 }
 
-.text span p {
+.ABOUT_US_summary p {
     font-size: 16px;
     line-height: 26px;
 }
@@ -145,8 +145,7 @@ main {
     padding-bottom: 19px;
 }
 
-
-.MENU_box span p {
+.MENU_summary p {
     font-size: 17px;
     line-height: 25px;
 }
@@ -191,7 +190,12 @@ main {
 .EVENT_box {
     background-color: white;
     border: 3px solid #4f260b;
-    padding: 37px 16%;
+    padding: 37px 0;
+}
+
+.EVENT_container {
+    margin: 0 auto;
+    max-width: 665px;
 }
 
 .EVENT_list {
@@ -208,6 +212,7 @@ main {
 .EVENT_list p {
     font-size: 23px;
     line-height: 45px;
+    text-decoration: underline;
 }
 
 #ACCESS {
