@@ -43,6 +43,8 @@ header {
     text-align: center;
 }
 
+
+
 main {
     background: #e8d9bf;
 }
@@ -61,8 +63,9 @@ main {
 
 .en {
     font-size: 30px;
-    line-height: 117px;
+    /* line-height: 117px; */
     text-align: center;
+    padding: 104px 0 47px 0;
 }
 
 .ja {
@@ -73,7 +76,11 @@ main {
     padding-top: 20px;
 }
 
-#ABOUT_US {
+.s_ja {
+    display: none;
+}
+
+#PC_ABOUT_US {
     max-width: 1000px;
     margin: 0 auto;
     padding: 94px 10px;
@@ -274,4 +281,302 @@ footer {
 
 .page_top img {
     width: 125px;
+}
+
+/* スマホ版メニュー */
+.sp_btn,
+.sp_nav,
+#sp_ABOUT_US {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        /* z-indexをつけるためにとりあえずpositionをつける */
+        position: relative;
+        z-index: 2;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        /* 位置の調整 */
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        /* 位置の調整 */
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /* ばつ印 */
+    .sp_btn.open span {
+        background: transparent;
+    }
+
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    /* メニューの見た目 */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        /* 重なり具合 */
+        z-index: 1;
+    }
+
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 40px;
+    }
+
+    .sp_nav li {
+        color: #fff;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+            "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .catch {
+        font-size: 67px;
+    }
+
+    .ja {
+        font-size: 19px;
+    }
+
+    .text>p {
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .header_logo {
+        width: 188px;
+
+    }
+
+    .header_wrap {
+        padding-top: 13px;
+    }
+
+    .en {
+        font-size: 17px;
+        padding: 21px 0 22px 0;
+
+    }
+
+    .catch {
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 0.02em;
+    }
+
+    .ja {
+        display: none;
+    }
+
+    .s_ja {
+        display: block;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    #PC_ABOUT_US {
+        display: none;
+    }
+
+    #sp_ABOUT_US {
+        display: block;
+        margin: 0 auto;
+        padding-top: 54 px;
+
+    }
+
+    #sp_ABOUT_US {
+        padding-top: 54px;
+        padding-bottom: 50px;
+    }
+
+    #sp_ABOUT_US h2 {
+        width: 160px;
+        padding-bottom: 12px;
+        margin: 0 auto;
+    }
+
+    .sp_text {
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .sp_text>p {
+        font-size: 36px;
+        line-height: 45px;
+        padding: 35px 0 19px 0;
+    }
+
+    .sp_ABOUT_US_summary p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #MENU {
+        padding: 0 37px;
+    }
+
+    #MENU h2 {
+        width: 87px;
+        margin: 0 auto;
+        padding-bottom: 17px;
+    }
+
+    .category {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .MENU_box {
+        width: 100%;
+
+    }
+
+    .MENU_box>p {
+        font-size: 40px;
+        line-height: 15px;
+        padding-bottom: 16px;
+    }
+
+    .MENU_summary p {
+        font-size: 17px;
+        line-height: 27px;
+        padding-bottom: 61px;
+    }
+
+    #GALLERY h2 img {
+        width: 142px;
+    }
+
+    #EVENT h2 {
+        padding-bottom: 15px;
+    }
+
+    #EVENT h2 img {
+        width: 101px;
+    }
+
+    .EVENT_box {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .EVENT_list {
+        flex-direction: column;
+        padding-left: 15px;
+        padding-bottom: 20px
+    }
+
+    .EVENT_list time {
+        font-size: 16px;
+        line-height: 20px
+    }
+
+    .EVENT_list p {
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 20px;
+    }
+
+    #ACCESS h2 img {
+        width: 124px;
+        padding-bottom: 5px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 191px;
+        display: block;
+    }
+
+    .footer_wrap {
+        padding: 40px 0 27px 20px;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+    }
+
+    .footer_logo {
+        padding-bottom: 28px;
+    }
+
+    .footer_info p {
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .footer_end p {
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 27px;
+    }
+
+    .page_top {
+        position: fixed;
+        right: 11px;
+        bottom: 75px;
+    }
+
+    .page_top img {
+        width: 100px;
+    }
 }
