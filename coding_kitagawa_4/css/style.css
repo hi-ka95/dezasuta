@@ -175,7 +175,7 @@ main {
     display: flex;
 }
 
-.GALLERY_slider img {
+.GALLERY_slider a {
     width: 20%;
 }
 
@@ -485,7 +485,10 @@ footer {
 
     .MENU_box {
         width: 100%;
+    }
 
+    .MENU_box img {
+        width: 100%;
     }
 
     .MENU_box>p {
@@ -502,6 +505,10 @@ footer {
 
     #GALLERY h2 img {
         width: 142px;
+    }
+
+    .GALLERY_slider img {
+        width: 100%;
     }
 
     #EVENT h2 {
@@ -579,6 +586,8 @@ footer {
     .page_top img {
         width: 100px;
     }
+
+
 }
 
 /* スライダーのCSS */
@@ -622,4 +631,35 @@ footer {
     border-top: 5px solid white;
     border-right: 5px solid white;
     transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .slick-prev {
+        left: 5%;
+        z-index: 1000;
+    }
+
+    .slick-next {
+        right: 5%;
+    }
+
+    .slick-prev:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        transform: rotate(-45deg);
+    }
+
+    .slick-next:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        transform: rotate(45deg);
+    }
 }

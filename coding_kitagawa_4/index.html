@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -24,6 +21,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
 </head>
 
 <body>
@@ -161,12 +159,48 @@
             </h2>
 
             <div class="GALLERY_slider">
-                <img src="./images/mobile_gallery-100.jpg" alt="店内の様子１">
-                <img src="./images/pc_gallary_01-100.jpg" alt="店内の様子">
-                <img src="./images/pc_gallary_02-100.jpg" alt="コーヒー豆">
-                <img src="./images/pc_gallary_03-100.jpg" alt="店内の様子">
-                <img src="./images/pc_gallary_04-100.jpg" alt="店内の様子">
-                <img src="./images/pc_gallary_05-100.jpg" alt="ラテアート">
+                <a href="#modal1">
+                    <img src="./images/mobile_gallery-100.jpg" alt="店内の様子１">
+                </a>
+                <div class="remodal" data-remodal-id="modal1">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <img src="./images/mobile_gallery-100.jpg" alt="店内の様子１">
+                </div>
+                <a href="#modal2">
+                    <img src="./images/pc_gallary_01-100.jpg" alt="店内の様子">
+                </a>
+                <div class="remodal" data-remodal-id="modal2">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <img src="./images/pc_gallary_01-100.jpg" alt="店内の様子">
+                </div>
+                <a href="#modal3">
+                    <img src="./images/pc_gallary_02-100.jpg" alt="コーヒー豆">
+                </a>
+                <div class="remodal" data-remodal-id="modal3">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <img src="./images/pc_gallary_02-100.jpg" alt="コーヒー豆">
+                </div>
+                <a href="#modal4">
+                    <img src="./images/pc_gallary_03-100.jpg" alt="店内の様子">
+                </a>
+                <div class="remodal" data-remodal-id="modal4">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <img src="./images/pc_gallary_03-100.jpg" alt="店内の様子">
+                </div>
+                <a href="#modal5">
+                    <img src="./images/pc_gallary_04-100.jpg" alt="店内の様子">
+                </a>
+                <div class="remodal" data-remodal-id="modal5">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <img src="./images/pc_gallary_04-100.jpg" alt="店内の様子">
+                </div>
+                <a href="#modal6">
+                    <img src="./images/pc_gallary_05-100.jpg" alt="ラテアート">
+                </a>
+                <div class="remodal" data-remodal-id="modal6">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <img src="./images/pc_gallary_05-100.jpg" alt="ラテアート">
+                </div>
             </div>
 
         </section>
@@ -250,7 +284,15 @@
                 arrows: true,
                 slidesToShow: 5,
                 slidesToScroll: 1,
-            })
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
         });
     </script>
 </body>
