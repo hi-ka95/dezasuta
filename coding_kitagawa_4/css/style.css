@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background: gray;
+    background: #e8d9bf;
 }
 
 header {
@@ -579,4 +579,18 @@ footer {
     .page_top img {
         width: 100px;
     }
+}
+
+/* スライダーのCSS */
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dotted.slick-slider {
+    margin: 0;
 }
