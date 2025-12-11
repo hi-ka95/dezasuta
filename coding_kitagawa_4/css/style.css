@@ -594,3 +594,32 @@ footer {
 .slick-dotted.slick-slider {
     margin: 0;
 }
+
+.slick-prev {
+    left: 21%;
+    z-index: 1000;
+}
+
+.slick-next {
+    right: 21%;
+}
+
+.slick-prev:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    transform: rotate(-45deg);
+}
+
+.slick-next:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+}

@@ -9,12 +9,21 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- modalのCDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -150,6 +159,7 @@
             <h2>
                 <img src="./images/gallery@2x.png" alt="GALLERY">
             </h2>
+
             <div class="GALLERY_slider">
                 <img src="./images/mobile_gallery-100.jpg" alt="店内の様子１">
                 <img src="./images/pc_gallary_01-100.jpg" alt="店内の様子">
@@ -158,6 +168,7 @@
                 <img src="./images/pc_gallary_04-100.jpg" alt="店内の様子">
                 <img src="./images/pc_gallary_05-100.jpg" alt="ラテアート">
             </div>
+
         </section>
 
         <section id="EVENT">
@@ -231,13 +242,16 @@
                 autoplaySpeed: 2000,
                 dots: true,
                 arrows: false,
-            });
+            })
+
             $('.GALLERY_slider').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
                 arrows: true,
-            });
-        })
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            })
+        });
     </script>
 </body>
 
